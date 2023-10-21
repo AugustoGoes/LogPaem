@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(169, 138, 228);
+
+}
+div{
+    
+   
+
+}
+input{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: solid white;
+    border: 1px solid #000000;
+    width: 250px;
+}
+
+header{
+    text-align: center;
+
+}
+
+.botao{
+    border: solid 1px blue;
+    border-radius: 20px;
+    color: blue;
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+.botao:hover{
+    background-color: rgb(0, 0, 80);
+    color: white;
+    transform: scale(1.1)
+}
+
+p{
+    margin-right: 100px;
+    
+    margin-top: 10px;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border:1px solid #020202; 
+    border-bottom:3; 
+    border-right:5; 
+    font-size:0.9em;
+  }
+  
+  th {
+    height: 70px;
+  }
+
+#meuFormulario > span {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    margin-right: 200px;
+}
+
+#meuFormulario {
+    width: 50%;
+    max-width: 50%;
+    
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+.nome{
+    margin-left: 250px;
+}
+
+.idade{
+    margin-left: 250px;
+}
+
+.peso{
+    margin-left: 250px;
+}
+
+.altura{
+    margin-left: 250px;
+}

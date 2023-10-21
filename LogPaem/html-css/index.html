@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <h1>Formulário</h1> 
+    </header>
+    <div class="conteudo">
+        <div class="formulario" id="meuFormulario">
+            <span>
+                <label class="nome" for="nome">Nome:</label>
+                <input texto="text" name="nome" id="nome">
+            </span>
+            <span>
+                <label class="idade" for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade">
+            </span>
+            <span>
+                <label class="peso" for="peso">Peso (kg):</label>
+                <input type="number" id="peso">
+            </span>
+            <span>
+                <label class="altura" for="altura">Altura (m):</label>
+                <input type="number" name="altura" id="altura">
+            </span>            
+            <a><button class="botao" onclick="adicionarLinha()" >Enviar</button></a>
+
+            <table border="" id="corpo-tabela">
+
+                
+                <td>Nome</td>
+                <td>Idade</td>
+                <td>Peso (kg)</td>
+                <td>Altura (m)</td>
+                <td> IMC </td>
+                </tr>
+
+                <!-- <tbody id="meuConteudo">
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </tbody> -->
+                </table>
+
+        </div>
+
+    </div>
+
+    <script>
+        function adicionarLinha(){
+            var nome = document.getElementById('nome').value;
+            var idade = document.getElementById('idade').value;
+            var peso = document.getElementById('peso').value;
+            var altura = document.getElementById('altura').value;
+            
+
+            const tabela = document.getElementById('corpo-tabela');
+            const linha = tabela.insertRow();
+
+
+            // var tabelaa = document.querySelector('#meuConteudo');
+
+            var imc = peso/altura**2;
+
+            celula = linha.insertCell(0);
+            celula1 = linha.insertCell(1);
+            celula2 = linha.insertCell(2);
+            celula3 = linha.insertCell(3);
+            celula4 = linha.insertCell(4);
+            
+            celula.innerHTML = nome;
+            celula1.innerHTML = idade;
+            celula2.innerHTML = peso;
+            celula3.innerHTML = altura;
+            celula4.innerHTML = imc.toFixed(2);
+
+
+
+            
+            
+        
+
+            
+
+        }
+    </script>
+
+    
+    
+    
+    
+    
+</body>
+</html>
